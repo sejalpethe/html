@@ -1,44 +1,82 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My HTML Page</title>
+    <title>HTML & CSS Journey</title>
+
+    <!-- Internal CSS -->
+    <style>
+        body {
+            margin: 0;
+            background-color: white;
+            font-family: "Times New Roman", serif;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 55px 30px;
+            padding: 35px 7%;
+        }
+
+        .box {
+            height: 300px;
+            border: 2px solid black;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .text2 {
+            color: red;
+        }
+
+        .text3 {
+            color: blue;
+        }
+
+        .text4 {
+            color: purple;
+        }
+    </style>
 </head>
 
 <body>
 
-    <h1 style="color: blue; font-size: 32px; background-color: lightgray;">
-        Welcome to My Page
-    </h1>
+    <div class="container">
 
-    <h1 style="color: green; font-size: 30px; background-color: lightyellow;">
-        About HTML
-    </h1>
+        <!-- Box 1: Inline CSS -->
+        <div class="box">
+            <span style="color: green;">
+                Welcome to HTML & CSS Journey
+            </span>
+        </div>
 
-    <h1 style="color: red; font-size: 28px; background-color: lightpink;">
-        Learning CSS
-    </h1>
+        <!-- Box 2: Internal CSS -->
+        <div class="box">
+            <span class="text2">
+                Welcome to HTML & CSS Journey
+            </span>
+        </div>
 
-    <h5 style="color: purple; font-size: 18px;">
-        HTML is easy to learn.
-    </h5>
+        <!-- Box 3: Internal CSS -->
+        <div class="box">
+            <span class="text3">
+                Welcome to HTML & CSS Journey
+            </span>
+        </div>
 
-    <h5 style="color: orange; font-size: 18px;">
-        CSS makes webpages beautiful.
-    </h5>
+        <!-- Box 4: Internal CSS -->
+        <div class="box">
+            <span class="text4">
+                Welcome to HTML & CSS Journey
+            </span>
+        </div>
 
-    <h5 style="color: brown; font-size: 18px;">
-        Practice makes you better.
-    </h5>
-
-    <p style="color: black; font-size: 16px; background-color: lightblue;">
-        HTML is used to create the structure of a webpage. It uses different
-        tags such as h1, h5, and p to display content.
-    </p>
-
-    <p style="color: darkgreen; font-size: 16px; background-color: lightgreen;">
-        CSS is used to style HTML elements. Inline CSS is written directly
-        inside the style attribute of an HTML tag.
-    </p>
+    </div>
 
 </body>
 </html>
